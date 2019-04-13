@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en" class="">
+
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,20 +9,40 @@
   <link href="../css/sandbox.css" rel="stylesheet">
   <link href="../css/drawer.css" rel="stylesheet">
   <style>
-    .drawer-brand{
+    .drawer-brand {
       font-family: 'mini-wakuwaku';
       font-size: 20px;
       font-weight: 100;
       color: #ff9b05;
     }
-    .mainn{
-      background-image:url('../img/information.png');
-      background-repeat: no-repeat;
-      background-size: 376px 2750px;
+
+    body {
+      background-color: #ff9b05;
     }
-    
+
+    form {
+      background-color: white;
+      top: 100px;
+      width: 40%;
+      height: 1000px;
+      margin: 30%;
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      flex-wrap: wrap;
+      margin-bottom: 50px;
+      text-overflow: ellipsis;
+      padding: 0 20px;
+      box-shadow: 0 8px 38px rgba(133, 133, 133, 0.3), 0 5px 12px rgba(133, 133, 133, 0.22);
+    }
+
+    h3{
+      padding: unset;
+      margin: inherit;
+    }
   </style>
 </head>
+
 <body class="drawer drawer--left drawer--navbarTopGutter">
   <header class="drawer-navbar drawer-navbar--fixed" role="banner">
     <div class="drawer-container">
@@ -44,9 +65,10 @@
   </header>
 
   <!-- content -->
-  <main role="main" class="mainn">
-    <section class="item">
-    </section>
+  <main role="main">
+    <form>
+    <h3>설명서설명서설명서</h3>
+  </form>
   </main>
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
@@ -54,10 +76,11 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
   <script src="drawer.min.js" charset="utf-8"></script>
   <script>
-    $(document).ready(function() {
+    $(document).ready(function () {
       $('.drawer').drawer();
     });
   </script>
 
 </body>
+
 </html>
