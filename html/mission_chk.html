@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en" class="">
+
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,20 +9,30 @@
   <link href="../css/sandbox.css" rel="stylesheet">
   <link href="../css/drawer.css" rel="stylesheet">
   <style>
-    .drawer-brand{
+    .drawer-brand {
       font-family: 'mini-wakuwaku';
       font-size: 20px;
       font-weight: 100;
       color: #ff9b05;
     }
-    main{
+
+    main {
       background-color: #efeff3;
     }
-    h3{
-      color: black;
+
+    h3 {
+      display: table-cell;
+      vertical-align: middle;
+      width: 900px;
+      color: white;
+      background-color: #ccc;
+      padding: 5px;
+      border-bottom: 1px solid #ddd;
+      border-radius: 10px;
     }
   </style>
 </head>
+
 <body class="drawer drawer--left drawer--navbarTopGutter">
   <header class="drawer-navbar drawer-navbar--fixed" role="banner">
     <div class="drawer-container">
@@ -46,6 +57,7 @@
   <!-- content -->
   <main role="main">
     <section class="item">
+      <img r>
       <h3>미션장소</h3>
     </section>
   </main>
@@ -55,10 +67,11 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
   <script src="drawer.min.js" charset="utf-8"></script>
   <script>
-    $(document).ready(function() {
+    $(document).ready(function () {
       $('.drawer').drawer();
     });
   </script>
 
 </body>
+
 </html>
