@@ -20,7 +20,8 @@
       background-color: #efeff3;
     }
 
-    h3 {
+    form {
+      vertical-align: -webkit-baseline-middle;
       display: table-cell;
       vertical-align: middle;
       width: 900px;
@@ -29,6 +30,12 @@
       padding: 5px;
       border-bottom: 1px solid #ddd;
       border-radius: 10px;
+      box-shadow: 0 8px 38px rgba(133, 133, 133, 0.3), 0 5px 12px rgba(133, 133, 133, 0.22);
+    }
+
+    img {
+      width: 100px;
+      height: 100px;
     }
   </style>
 </head>
@@ -57,8 +64,19 @@
   <!-- content -->
   <main role="main">
     <section class="item">
-      <img r>
-      <h3>미션장소</h3>
+      <form>
+        <table>
+          <tr>
+            <td>
+              <img id="image"
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/ba/2011%EB%85%84_11%EC%9B%94_%EB%8C%80%ED%95%9C%EB%AF%BC%EA%B5%AD_%EC%84%9C%EC%9A%B8%ED%8A%B9%EB%B3%84%EC%8B%9C_%EB%AA%85%EC%86%8C_%28Seoul_best_attractions%29_%EA%B4%91%ED%99%94%EB%AC%B8.JPG/350px-2011%EB%85%84_11%EC%9B%94_%EB%8C%80%ED%95%9C%EB%AF%BC%EA%B5%AD_%EC%84%9C%EC%9A%B8%ED%8A%B9%EB%B3%84%EC%8B%9C_%EB%AA%85%EC%86%8C_%28Seoul_best_attractions%29_%EA%B4%91%ED%99%94%EB%AC%B8.JPG">
+            </td>
+            <td>
+              <h3 id="m_place">미션장소</h3>
+            </td>
+          </tr>
+        </table>
+      </form>
     </section>
   </main>
 
